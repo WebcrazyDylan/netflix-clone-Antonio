@@ -1,4 +1,5 @@
 import Head from "next/head";
+import axios from "axios";
 import Input from "@/components/Input";
 import React, { useCallback, useState } from "react";
 
@@ -14,6 +15,18 @@ const Auth = () => {
       currentVariant === "login" ? "register" : "login"
     );
   }, []);
+
+  const register = useCallback(async () => {
+    try {
+      await axios.post("/api/register", {
+        email,
+        name,
+        password,
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }, [email, name, password]);
 
   return (
     <>
