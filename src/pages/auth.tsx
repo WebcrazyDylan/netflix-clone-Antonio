@@ -84,7 +84,10 @@ const Auth = () => {
                   value={password}
                 />
               </div>
-              <button className="bg-red-500 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">
+              <button
+                onClick={register}
+                className="bg-red-500 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition"
+              >
                 {variant === "login" ? "Log In" : "Sign Up"}
               </button>
               <p className="text-neutral-400 mt-12">
