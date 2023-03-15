@@ -43,7 +43,7 @@ const Watch = () => {
       </nav>
       <video
         src={data?.videoUrl}
-        autoPlay={false}
+        autoPlay
         controls
         className="h-full w-full"
       ></video>

@@ -72,7 +72,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
             <video
               muted
               loop
-              autoPlay={false}
+              autoPlay
               src={data?.videoUrl}
               poster={data?.thumbnail}
               className="

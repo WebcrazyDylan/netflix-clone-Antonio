@@ -22,7 +22,7 @@ const Billboard = () => {
         object-cover
         brightness-[60%]
       "
-        autoPlay={false}
+        autoPlay
         muted
         loop
         poster={data?.thumbnail}
