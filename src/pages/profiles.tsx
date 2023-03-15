@@ -69,6 +69,7 @@ const Profiles = () => {
                     text-center
                     group-hover:text-white
                     group-hover:cursor-pointer
+                    first-letter:uppercase
                   "
                 >
                   {user?.name}
