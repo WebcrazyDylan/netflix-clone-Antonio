@@ -1,38 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Full-Stack Netflix Clone with React, NextJS, TypeScript, TailwindCSS & Prisma
 
-## Getting Started
+This is a repository for a FullStack Netflix Clone tutorial using React, NextJS, TailwindCSS & Prisma.
 
-First, run the development server:
+Features:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- Environment, Typescript, NextJS Setup
+- MongoDB & Prisma connect, Database creation
+- Authentication with NextAuth, Google & Github Login
+- Full responsiveness on all pages
+- Cookie based authentication
+- API and Controllers creation
+- Detail-oriented effects and animations using TailwindCSS
+- React SWR data fetching
+- Zustand state management
+
+### Prerequisites
+
+**Node version 14.x**
+
+### Clone this repository
+
+```shell
+git clone https://github.com/nayak-nirmalya/netflix-clone
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### Setup .env file as shown in /.env.example
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```js
+DATABASE_URL=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_ID=
+GITHUB_SECRET=
+NEXTAUTH_JWT_SECRET=
+NEXTAUTH_SECRET=
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Start the app
 
-## Learn More
+```shell
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Available commands
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run Prisma Studio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```shell
+npx prisma studio
+```
 
-## Deploy on Vercel
+Running commands with npm `npm run [command]`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
+| `build` | Build instance of the app                |
+| `start` | Run Build instance of the app            |
